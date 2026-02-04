@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Be My Valentine 😈</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle, #ff0844, #ffb199);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      background: #111;
+      color: white;
+      padding: 45px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      max-width: 420px;
+    }
+    h1 {
+      margin-bottom: 30px;
+      color: #ff4d6d;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin: 18px 0;
+      padding: 16px;
+      font-size: 18px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #ff4d6d, #ff0844);
+      color: white;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    button:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 20px rgba(255,77,109,0.8);
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 22px;
+      color: #ffb3c6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Be my Valentine tonight? 💋</h1>
+
+    <button onclick="sweetYes()">Yessss 😍</button>
+    <button onclick="dirtyYes()">Yessss… and I want you after the date 😈🔥</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function sweetYes() {
+      document.getElementById("message").innerText =
+        "Cute choice… but you know I won’t behave 😘";
+    }
+
+    function dirtyYes() {
+      document.getElementById("message").innerText =
+        "Oh fuck 😏 Valentine secured. Cancel your plans tomorrow.";
+    }
+  </script>
+</body>
+</html>
